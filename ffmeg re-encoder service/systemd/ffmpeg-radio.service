@@ -1,0 +1,18 @@
+[Unit]
+Description=ffmpeg radio transcode service
+After=network.target
+Wants=icecast2.service
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/bin/sh /root/ffmpeg-radio/transcode.sh
+ExecReload=/bin/kill -HUP $MAINPID
+
+
+StandardOutput=null
+StandardError=journal
+RestartSec=10s
+
+[Install] 
+WantedBy=multi-user.target
