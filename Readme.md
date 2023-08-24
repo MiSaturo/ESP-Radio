@@ -10,6 +10,11 @@ You need Arduino IDE to build.
 - install (ESP8266Audio)[https://github.com/earlephilhower/ESP8266Audio] 
 - set clock to 160MHZ
 
+# Circuit
+
+For esp8266 without external DAC use GPIO3(RX):
+
+![No Dec Circuit](I2SNoDac%20for%20ESP8266/no-dec-circuit.jpg)
 
 # How to setup ffmpeg re-encoder
 
