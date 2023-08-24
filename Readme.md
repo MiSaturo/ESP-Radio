@@ -23,5 +23,7 @@ For esp8266 without external DAC use GPIO3(RX):
 - get ffmpeg binary from [Here](https://johnvansickle.com/ffmpeg/)
 - put `ffmpeg` file from above archive to `/root/ffmpeg-radio`
 - add run permission by 'chmod +x ffmpeg'
+- install icecast by `apt install icecast2`
+- disable icecast service by `systemctl stop icecast2 && systemctl disable icecast2`
 - auto start service by `systemctl enable ffmpeg-radio`
 - run service by `systemctl start ffmpeg-radio`
